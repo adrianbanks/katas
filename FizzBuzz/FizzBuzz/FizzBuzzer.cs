@@ -9,19 +9,27 @@
                 return 0.ToString();
             }
 
-            string answer = string.Empty;
+            if (IsFizzBuzz(i))
+            {
+                return "fizzbuzz";
+            }
 
             if (IsFizz(i))
             {
-                answer += "fizz";
+                return "fizz";
             }
 
             if (IsBuzz(i))
             {
-                answer += "buzz";
+                return "buzz";
             }
 
-            return string.IsNullOrEmpty(answer) ? i.ToString() : answer;
+            return i.ToString();
+        }
+
+        private static bool IsFizzBuzz(int i)
+        {
+            return i % 15 == 0;
         }
 
         private static bool IsBuzz(int i)
