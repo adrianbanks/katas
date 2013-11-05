@@ -9,6 +9,11 @@
                 return "fizz";
             }
 
+            if (i % 5 == 0)
+            {
+                return "buzz";
+            }
+
             return i.ToString();
         }
     }
