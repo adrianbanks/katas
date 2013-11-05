@@ -28,5 +28,13 @@ namespace FizzBuzz
             string answer = fizzBuzzer.GetAnswer(3);
             Assert.That(answer, Is.EqualTo("fizz"));
         }
+
+        [Test]
+        public void ANumberDivisibleByFiveReturnsBuzz()
+        {
+            var fizzBuzzer = new FizzBuzzer();
+            string answer = fizzBuzzer.GetAnswer(5);
+            Assert.That(answer, Is.EqualTo("buzz"));
+        }
     }
 }
