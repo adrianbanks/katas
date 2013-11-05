@@ -24,11 +24,13 @@ namespace FizzBuzz
             Assert.That(answer, Is.EqualTo("fizz"));
         }
 
-        [Test]
-        public void ANumberDivisibleByFiveReturnsBuzz()
+        [TestCase(5)]
+        [TestCase(10)]
+        [TestCase(-5)]
+        public void ANumberDivisibleByFiveReturnsBuzz(int number)
         {
             var fizzBuzzer = new FizzBuzzer();
-            string answer = fizzBuzzer.GetAnswer(5);
+            string answer = fizzBuzzer.GetAnswer(number);
             Assert.That(answer, Is.EqualTo("buzz"));
         }
 
