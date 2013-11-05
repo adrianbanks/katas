@@ -4,7 +4,7 @@
     {
         public string GetAnswer(int i)
         {
-            return 0.ToString();
+            return i.ToString();
         }
     }
 }

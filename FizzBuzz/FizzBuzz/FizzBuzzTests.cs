@@ -6,7 +6,7 @@ namespace FizzBuzz
     public sealed class FizzBuzzTests
     {
         [Test]
-        public void ZeroPrintsZero()
+        public void ZeroReturnsZero()
         {
             var fizzBuzzer = new FizzBuzzer();
             string answer = fizzBuzzer.GetAnswer(0);
@@ -14,7 +14,7 @@ namespace FizzBuzz
         }        
         
         [Test]
-        public void OnePrintsOne()
+        public void OneReturnsOne()
         {
             var fizzBuzzer = new FizzBuzzer();
             string answer = fizzBuzzer.GetAnswer(1);
