@@ -14,11 +14,13 @@ namespace FizzBuzz
             Assert.That(answer, Is.EqualTo(output));
         }        
 
-        [Test]
-        public void ANumberDivisibleByThreeReturnsFizz()
+        [TestCase(3)]
+        [TestCase(6)]
+        [TestCase(-3)]
+        public void ANumberDivisibleByThreeReturnsFizz(int number)
         {
             var fizzBuzzer = new FizzBuzzer();
-            string answer = fizzBuzzer.GetAnswer(3);
+            string answer = fizzBuzzer.GetAnswer(number);
             Assert.That(answer, Is.EqualTo("fizz"));
         }
 
