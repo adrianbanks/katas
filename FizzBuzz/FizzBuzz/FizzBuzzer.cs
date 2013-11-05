@@ -4,6 +4,11 @@
     {
         public string GetAnswer(int i)
         {
+            if (i == 0)
+            {
+                return 0.ToString();
+            }
+
             string answer = string.Empty;
 
             if (i % 3 == 0)
