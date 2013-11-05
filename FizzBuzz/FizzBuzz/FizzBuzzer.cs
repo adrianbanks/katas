@@ -11,17 +11,27 @@
 
             string answer = string.Empty;
 
-            if (i % 3 == 0)
+            if (IsFizz(i))
             {
                 answer += "fizz";
             }
 
-            if (i % 5 == 0)
+            if (IsBuzz(i))
             {
                 answer += "buzz";
             }
 
             return string.IsNullOrEmpty(answer) ? i.ToString() : answer;
+        }
+
+        private static bool IsBuzz(int i)
+        {
+            return i % 5 == 0;
+        }
+
+        private static bool IsFizz(int i)
+        {
+            return i % 3 == 0;
         }
     }
 }
