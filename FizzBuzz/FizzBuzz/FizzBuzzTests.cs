@@ -5,13 +5,13 @@ namespace FizzBuzz
     [TestFixture]
     public sealed class FizzBuzzTests
     {
-//        [Test]
-//        public void ZeroReturnsZero()
-//        {
-//            var fizzBuzzer = new FizzBuzzer();
-//            string answer = fizzBuzzer.GetAnswer(0);
-//            Assert.That(answer, Is.EqualTo("0"));
-//        }        
+        [Test]
+        public void ZeroReturnsZero()
+        {
+            var fizzBuzzer = new FizzBuzzer();
+            string answer = fizzBuzzer.GetAnswer(0);
+            Assert.That(answer, Is.EqualTo("0"));
+        }        
         
         [Test]
         public void OneReturnsOne()
