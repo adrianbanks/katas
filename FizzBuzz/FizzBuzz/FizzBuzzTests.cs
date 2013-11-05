@@ -5,21 +5,14 @@ namespace FizzBuzz
     [TestFixture]
     public sealed class FizzBuzzTests
     {
-        [Test]
-        public void ZeroReturnsZero()
+        [TestCase(0, "0")]
+        [TestCase(1, "1")]
+        public void ANonFizzBuzzNumberReturnsTheNumber(int number, string output)
         {
             var fizzBuzzer = new FizzBuzzer();
-            string answer = fizzBuzzer.GetAnswer(0);
-            Assert.That(answer, Is.EqualTo("0"));
+            string answer = fizzBuzzer.GetAnswer(number);
+            Assert.That(answer, Is.EqualTo(output));
         }        
-        
-        [Test]
-        public void OneReturnsOne()
-        {
-            var fizzBuzzer = new FizzBuzzer();
-            string answer = fizzBuzzer.GetAnswer(1);
-            Assert.That(answer, Is.EqualTo("1"));
-        }
 
         [Test]
         public void ANumberDivisibleByThreeReturnsFizz()
