@@ -20,5 +20,13 @@ namespace FizzBuzz
             string answer = fizzBuzzer.GetAnswer(1);
             Assert.That(answer, Is.EqualTo("1"));
         }
+
+        [Test]
+        public void ANumberDivisibleByThreeReturnsFizz()
+        {
+            var fizzBuzzer = new FizzBuzzer();
+            string answer = fizzBuzzer.GetAnswer(3);
+            Assert.That(answer, Is.EqualTo("fizz"));
+        }
     }
 }
