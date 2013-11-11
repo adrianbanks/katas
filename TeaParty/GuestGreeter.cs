@@ -4,7 +4,14 @@
     {
         public string Greet(string surname, bool isMale)
         {
-            return "Hello Ms. Austen";
+            if (isMale)
+            {
+                return "Hello Mr. " + surname;
+            }
+            else
+            {
+                return "Hello Ms. Austen";
+            }
         }
     }
 }
