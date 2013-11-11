@@ -6,11 +6,11 @@
         private bool isMale;
         private bool isKnighted;
 
-        public Guest(string surname, bool isMale, bool isNKnighted)
+        public Guest(string surname, bool isMale, bool isKnighted)
         {
             Surname = surname;
             this.isMale = isMale;
-            this.isKnighted = isNKnighted;
+            this.isKnighted = isKnighted;
         }
 
         public string Salutation
