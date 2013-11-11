@@ -4,11 +4,20 @@ namespace TeaParty
 {
     public class GuestGreeter
     {
-        public string Greet(string surname, bool isMale)
+        public string Greet(string surname, bool isMale, bool isKnighted)
         {
             var greeting = new StringBuilder();
             greeting.Append("Hello ");
-            greeting.Append(isMale ? "Mr." : "Ms.");
+
+            if (isKnighted)
+            {
+                greeting.Append("Sir.");
+            }
+            else
+            {
+                greeting.Append(isMale ? "Mr." : "Ms.");
+            }
+
             greeting.Append(" ");
             greeting.Append(surname);
             return greeting.ToString();
