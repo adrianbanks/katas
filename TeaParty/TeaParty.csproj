@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Guest.cs" />
     <Compile Include="GuestGreeter.cs" />
     <Compile Include="GuestGreeterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
