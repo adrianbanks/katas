@@ -3,14 +3,27 @@
     public class Guest
     {
         public string Surname { get; set; }
-        public bool IsMale { get; set; }
-        public bool IsKnighted { get; set; }
+        private bool isMale;
+        private bool isKnighted;
 
         public Guest(string surname, bool isMale, bool isNKnighted)
         {
             Surname = surname;
-            IsMale = isMale;
-            IsKnighted = isNKnighted;
+            this.isMale = isMale;
+            this.isKnighted = isNKnighted;
+        }
+
+        public string Salutation
+        {
+            get
+            {
+                if (isKnighted)
+                {
+                    return "Sir.";
+                }
+
+                return isMale ? "Mr." : "Ms.";
+            }
         }
     }
 }
