@@ -5,3 +5,4 @@ katas
  - http://codingkata.net/Katas
  - http://codekata.pragprog.com
  - http://cyber-dojo.org/
+ - http://ccd-school.de/coding-dojo/
