@@ -6,3 +6,4 @@ katas
  - http://codekata.pragprog.com
  - http://cyber-dojo.org/
  - http://ccd-school.de/coding-dojo/
+ - http://agilekatas.co.uk/katas/
