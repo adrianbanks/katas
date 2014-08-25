@@ -7,3 +7,4 @@ katas
  - http://cyber-dojo.org/
  - http://ccd-school.de/coding-dojo/
  - http://agilekatas.co.uk/katas/
+ - http://codingdojo.org/cgi-bin/index.pl?KataCatalogue
